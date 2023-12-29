@@ -56,6 +56,9 @@ cc_defaults {
         hwaddress: false,
     },
     native_coverage: false,
+    lto: {
+        never: true,
+    },
 }
 
 // Used by cc_binary when producing the ELF of a vmbase-based binary.
